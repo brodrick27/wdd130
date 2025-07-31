@@ -13,7 +13,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
+}\
 
 body {
   font-family: var(--body-font);
@@ -105,7 +105,7 @@ padding-right: 10px;
 }
 
 /* ========== HISTORY SECTION ========== */
-section:nth-of-type(1) {
+ .history{
   background-color: var(--secondary-color);
   color: black;
   padding: 20px;
@@ -113,18 +113,18 @@ section:nth-of-type(1) {
   margin-top: 20px;
 }
 
-.history {
+.section:nth-of-type(1) {
   display: flex;
   
-}
+text-align: center;}
 
-.history img {
+.history.img {
   width: 200px;
   height: 150px;
-}
+display: block;}
 
 /* ========== ADVENTURE IMAGES SECTION ========== */
-.main-img-h2 {
+.main-img2 {
   text-align: center;
   padding: 20px;
 }
@@ -185,3 +185,52 @@ section:nth-of-type(2) img {
   border-radius: 4px;
 }
 */
+
+
+
+  
+}
+
+.contactus{text-align: }
+
+.forms{text-align: left;}
+
+.map{text-align: right;height:50px;margin-top: 40px;}
+.map{position: relative;width: 100%;}
+
+.map-heading{position:absolute; left: 30px;}
+
+.maya{color:#FF7043}
+.maya:hover{color:orangered ;}
+.copy{display: flex;}
+
+figcaption {
+  font-weight: bold;
+  text-align: center;
+  margin-top: 0.5rem;
+  font-size: 1rem;
+}
+
+.picture {
+  display: flex;
+  justify-content: center;
+  gap: 70px;
+  height: auto; /* Let it grow based on content */
+}
+
+.picture figure {
+  text-align: center;
+  width: 150px; /* Adjust this if needed */
+}
+
+.picture img {
+  width: 100%; /* Make image fill its container */
+  height: auto;
+  border-radius: 8px;gap: 70px; /* Optional, for nicer styling */
+}
+
+.picture figcaption {
+  font-weight: bold;
+  margin-top: 5px;
+  color: #333; /* Change this to your desired text color */
+}

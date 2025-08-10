@@ -396,3 +396,19 @@ tbody tr:nth-child(even) {
 .text {
   color: #333;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+.map iframe {
+  border: 0;
+}

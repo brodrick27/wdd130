@@ -13,8 +13,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}\
+}
+ 
 
+/* the begining  of the about us css */
 body {
   font-family: var(--body-font);
   color: var(--accent1-color);
@@ -64,45 +66,90 @@ padding-right: 10px;
 
 
 /* ========== HERO SECTION ========== */
-.hero {
-  position: relative;
+
+.hero{position: relative;}
+.hero img{display: block;width:100%;height:auto}
+
+h1{position:absolute ;top: 20px;width: 50%;padding: 16px;text-align: 
+  center;opacity: 0.7;background-color: var(--accent1-color); 
+  left: 25%;top: 50px;color: #fffffff5;}
+
+
+
+
+.hero-img {
+  position: absolute;
+  top: 30%; /* adjust to move up or down */
+  left: 10%; /* adjust horizontal position */
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(255, 255, 255, 0.8); /* optional background to make it readable */
+  padding: 10px;
+  border-radius: 8px;
+flex-direction: row-reverse;color: #3f51b5a2;}
+
+.hero-img img {
+  width: 80px; /* make it smaller */
+  height: 70px;
+  border-radius: 
 }
 
-.hero img {
-  display: block;
+
+/* the index.html */
+
+.my-water-rafting {position:relative;}
+.my-water-rafting img {width: 100%;height: auto;display: block;}
+.grid-section{display:grid;grid-column: 1fr 1fr;gap: 35px;} 
+ .grid-section img{width:30 px;}
+
+
+ .indform {display: flex;flex-direction: column;justify-content: center;
+  align-items: center;padding: 10px;background-color: var(--secondary-color) ;margin-top: 20px;}
+
+ .paradise h2{text-align: center;padding: 10px;background-color:var(--secondary-color);left: 30%;display: flex;justify-content: center;margin-top: 20px;margin-bottom: 20px;}
+ .paradise p{margin-bottom: 20px;text-align: center;color: #444;}
+
+
+
+ .grid-section {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.grid-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 2px;
+}
+
+.grid-row.reverse {
+  flex-direction: row-reverse; /* reverses column order visually */
+}
+
+.grid-row.reverse > * {
+  direction: ltr; /* fixes text direction back */
+}
+
+.text-block {
+  padding: 20px;
+color: #333;text-align: center;}
+
+.image-block img {
   width: 100%;
   height: auto;
+  display: block;
 }
 
-.hero h1 {
-  position: absolute;
-  top: 20px;
-  margin-left: 200px;
-  padding: 10px;
-  letter-spacing: 10px;
-  text-align: center;
-  opacity: 0.7;
-  background-color: var(--accent1-color);
-  color: #fff;
-}
 
-.hero article {
-  display: flex;
-  position: absolute;
-  bottom: 350px;
-  left: 40px;
-  background-color: white;
-  padding: 10px;
-  opacity: 0.85;
-  width: 800px;
-  max-width: 90%;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-}
+/* end of index.html */
 
-.hero article img {
-  float: right;
-  width: 125px;
-}
+
+
+
+
 
 /* ========== HISTORY SECTION ========== */
  .history{
@@ -113,15 +160,38 @@ padding-right: 10px;
   margin-top: 20px;
 }
 
-.section:nth-of-type(1) {
-  display: flex;
-  
-text-align: center;}
+.history {
+  padding: 1rem;
+  text-align: center;
+}
 
-.history.img {
-  width: 200px;
-  height: 150px;
-display: block;}
+.history h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.history-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  text-align: justify;
+}
+
+.history-content p {
+  flex: 1 1 200px;
+  max-width: 300px;
+}
+
+.history-content img {
+  max-width: 200px;
+  height: auto;
+}
+
+
+  
 
 /* ========== ADVENTURE IMAGES SECTION ========== */
 .main-img2 {
@@ -131,12 +201,15 @@ display: block;}
 
 .main-images {display: flex; gap: 25px;
   
-}
+padding: 1rem;background-color: var(--secondary-color);color: #3f51b577;}
 
 .main-images img {
-  width: 150px;
+  width: 140px;
   height: 150px;
 }
+
+.main-images-h2{text-align: center;margin-top:  1rem;margin-bottom:  1rem;padding:1rem;background-color:var(--secondary-color) ;}
+
 
 /* ========== FOOTER ========== */
 footer {
@@ -185,15 +258,15 @@ section:nth-of-type(2) img {
   border-radius: 4px;
 }
 */
-
-
+/* the end of the about sus section */
 
   
-}
+
+/* the contact us section */
 
 .contactus{text-align: }
 
-.forms{text-align: left;}
+.forms{text-align: left;color:#3F51B5}
 
 .map{text-align: right;height:50px;margin-top: 40px;}
 .map{position: relative;width: 100%;}
@@ -234,3 +307,65 @@ figcaption {
   margin-top: 5px;
   color: #333; /* Change this to your desired text color */
 }
+
+ /* The end of the contact us section */
+
+
+
+ .picturetrips {
+  display: flex;
+  justify-content: center;
+  gap: 70px;
+  height: auto; /* Let it grow based on content */
+}
+
+.picture figure {
+  text-align: center;
+  width: 150px; /* Adjust this if needed */
+}
+
+.picturetrips img {
+  width: 100%; /* Make image fill its container */
+  height: auto;
+  border-radius: 8px;gap: 70px; /* Optional, for nicer styling */
+margin-top: 20px;}
+
+.picturetrips figcaption {
+  font-weight: bold;
+  margin-top: 5px;
+   
+  color:#007BFF; /* Change this to your desired text color */
+
+}
+
+
+
+.discover{text-align: center;color: var(--secondary-color);}
+.picturetrips p{text-align: center;color:#333;}
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  padding: 12px;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+thead {
+  background-color: #007BFF;
+  color: white;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.tableh2{text-align: center;}
+
+.text{color: #333;}
+

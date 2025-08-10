@@ -10,3 +10,34 @@ main img{width: 150px; height: auto;}
 p {padding: 0;}
 footer{margin-top: 15px;border-top: 1px solid #000; text-align: center;}
  
+
+.tableh2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.rafting-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+}
+
+.rafting-table th,
+.rafting-table td {
+  border: 1px solid #333;
+  padding: 10px;
+  text-align: center;
+}
+
+.rafting-table th {
+  background-color: #0a74da;
+  color: white;
+}
+
+.rafting-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.rafting-table tr:hover {
+  background-color: #d1e7fd;
+}

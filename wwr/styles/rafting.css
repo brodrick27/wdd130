@@ -14,9 +14,8 @@
   padding: 0;
   box-sizing: border-box;
 }
- 
 
-/* the begining  of the about us css */
+/* the beginning of the about us css */
 body {
   font-family: var(--body-font);
   color: var(--accent1-color);
@@ -40,7 +39,8 @@ header {
   padding: 10px;
   background-color: var(--primary-color);
   color: var(--accent2-color);
-margin-bottom: 20px;}
+  margin-bottom: 20px;
+}
 
 header img {
   height: 80px;
@@ -57,62 +57,96 @@ nav a {
   margin-left: 11px;
   color: white;
   font-weight: bold;
-  text-decoration: navajowhite;
-padding-right: 10px;
+  text-decoration: none;
+  padding-right: 10px;
 }
 
-
-
-
-
 /* ========== HERO SECTION ========== */
+.hero {
+  position: relative;
+}
+.hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
 
-.hero{position: relative;}
-.hero img{display: block;width:100%;height:auto}
-
-h1{position:absolute ;top: 20px;width: 50%;padding: 16px;text-align: 
-  center;opacity: 0.7;background-color: var(--accent1-color); 
-  left: 25%;top: 50px;color: #fffffff5;}
-
-
-
+h1 {
+  position: absolute;
+  width: 50%;
+  padding: 16px;
+  text-align: center;
+  opacity: 0.7;
+  background-color: var(--accent1-color);
+  left: 25%;
+  top: 50px;
+  color: #ffffff;
+}
 
 .hero-img {
   position: absolute;
-  top: 30%; /* adjust to move up or down */
-  left: 10%; /* adjust horizontal position */
+  top: 30%;
+  left: 10%;
   display: flex;
   align-items: center;
   gap: 10px;
-  background: rgba(255, 255, 255, 0.8); /* optional background to make it readable */
+  background: rgba(255, 255, 255, 0.8);
   padding: 10px;
   border-radius: 8px;
-flex-direction: row-reverse;color: #3f51b5a2;}
-
-.hero-img img {
-  width: 80px; /* make it smaller */
-  height: 70px;
-  border-radius: 
+  flex-direction: row-reverse;
+  color: #3f51b5a2;
 }
 
+.hero-img img {
+  width: 80px;
+  height: 70px;
+  border-radius: 8px;
+}
 
 /* the index.html */
+.my-water-rafting {
+  position: relative;
+}
+.my-water-rafting img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.grid-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 35px;
+}
+.grid-section img {
+  width: 30px;
+}
 
-.my-water-rafting {position:relative;}
-.my-water-rafting img {width: 100%;height: auto;display: block;}
-.grid-section{display:grid;grid-column: 1fr 1fr;gap: 35px;} 
- .grid-section img{width:30 px;}
+.indform {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-color: var(--secondary-color);
+  margin-top: 20px;
+}
 
+.paradise h2 {
+  text-align: center;
+  padding: 10px;
+  background-color: var(--secondary-color);
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.paradise p {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #444;
+}
 
- .indform {display: flex;flex-direction: column;justify-content: center;
-  align-items: center;padding: 10px;background-color: var(--secondary-color) ;margin-top: 20px;}
-
- .paradise h2{text-align: center;padding: 10px;background-color:var(--secondary-color);left: 30%;display: flex;justify-content: center;margin-top: 20px;margin-bottom: 20px;}
- .paradise p{margin-bottom: 20px;text-align: center;color: #444;}
-
-
-
- .grid-section {
+.grid-section {
   width: 90%;
   margin: 0 auto;
 }
@@ -126,16 +160,18 @@ flex-direction: row-reverse;color: #3f51b5a2;}
 }
 
 .grid-row.reverse {
-  flex-direction: row-reverse; /* reverses column order visually */
+  flex-direction: row-reverse;
 }
 
 .grid-row.reverse > * {
-  direction: ltr; /* fixes text direction back */
+  direction: ltr;
 }
 
 .text-block {
   padding: 20px;
-color: #333;text-align: center;}
+  color: #333;
+  text-align: center;
+}
 
 .image-block img {
   width: 100%;
@@ -143,26 +179,13 @@ color: #333;text-align: center;}
   display: block;
 }
 
-
-/* end of index.html */
-
-
-
-
-
-
 /* ========== HISTORY SECTION ========== */
- .history{
+.history {
   background-color: var(--secondary-color);
   color: black;
   padding: 20px;
   text-align: center;
   margin-top: 20px;
-}
-
-.history {
-  padding: 1rem;
-  text-align: center;
 }
 
 .history h2 {
@@ -190,26 +213,32 @@ color: #333;text-align: center;}
   height: auto;
 }
 
-
-  
-
 /* ========== ADVENTURE IMAGES SECTION ========== */
 .main-img2 {
   text-align: center;
   padding: 20px;
 }
 
-.main-images {display: flex; gap: 25px;
-  
-padding: 1rem;background-color: var(--secondary-color);color: #3f51b577;}
+.main-images {
+  display: flex;
+  gap: 25px;
+  padding: 1rem;
+  background-color: var(--secondary-color);
+  color: #3f51b577;
+}
 
 .main-images img {
   width: 140px;
   height: 150px;
 }
 
-.main-images-h2{text-align: center;margin-top:  1rem;margin-bottom:  1rem;padding:1rem;background-color:var(--secondary-color) ;}
-
+.main-images-h2 {
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background-color: var(--secondary-color);
+}
 
 /* ========== FOOTER ========== */
 footer {
@@ -232,50 +261,42 @@ footer img {
   width: 30px;
 }
 
-/* ========== SOCIAL MEDIA ========== */
 .socialmedia a {
   text-decoration: none;
 }
 
-/* ========== OPTIONAL: OLD BLOCK (Preserved but Disabled) ========== */
-/*
-nav, p, section, article {
-  margin: 16px; 
-  padding: 8px;
+/* ========== CONTACT US SECTION ========== */
+.contactus {
+  text-align: center;
 }
 
-section:nth-of-type(2) {
+.forms {
+  text-align: left;
+  color: #3F51B5;
+}
+
+.map {
+  text-align: right;
+  height: 50px;
+  margin-top: 40px;
+  position: relative;
+  width: 100%;
+}
+
+.map-heading {
+  position: absolute;
+  left: 30px;
+}
+
+.maya {
+  color: #FF7043;
+}
+.maya:hover {
+  color: orangered;
+}
+.copy {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 10px;
-  padding: 20px;
 }
-
-section:nth-of-type(2) img {
-  width: 160px;
-  height: auto;
-  border-radius: 4px;
-}
-*/
-/* the end of the about sus section */
-
-  
-
-/* the contact us section */
-
-.contactus{text-align: }
-
-.forms{text-align: left;color:#3F51B5}
-
-.map{text-align: right;height:50px;margin-top: 40px;}
-.map{position: relative;width: 100%;}
-
-.map-heading{position:absolute; left: 30px;}
-
-.maya{color:#FF7043}
-.maya:hover{color:orangered ;}
-.copy{display: flex;}
 
 figcaption {
   font-weight: bold;
@@ -288,61 +309,64 @@ figcaption {
   display: flex;
   justify-content: center;
   gap: 70px;
-  height: auto; /* Let it grow based on content */
+  height: auto;
 }
 
 .picture figure {
   text-align: center;
-  width: 150px; /* Adjust this if needed */
+  width: 150px;
 }
 
 .picture img {
-  width: 100%; /* Make image fill its container */
+  width: 100%;
   height: auto;
-  border-radius: 8px;gap: 70px; /* Optional, for nicer styling */
+  border-radius: 8px;
 }
 
 .picture figcaption {
   font-weight: bold;
   margin-top: 5px;
-  color: #333; /* Change this to your desired text color */
+  color: #333;
 }
 
- /* The end of the contact us section */
+.contact-title {
+  font-size: 2rem;
+  background-color: transparent;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  color: #007BFF;
+}
 
-
-
- .picturetrips {
+/* ========== TRIPS SECTION ========== */
+.picturetrips {
   display: flex;
   justify-content: center;
   gap: 70px;
-  height: auto; /* Let it grow based on content */
-}
-
-.picture figure {
-  text-align: center;
-  width: 150px; /* Adjust this if needed */
+  height: auto;
 }
 
 .picturetrips img {
-  width: 100%; /* Make image fill its container */
+  width: 100%;
   height: auto;
-  border-radius: 8px;gap: 70px; /* Optional, for nicer styling */
-margin-top: 20px;}
+  border-radius: 8px;
+  margin-top: 20px;
+}
 
 .picturetrips figcaption {
   font-weight: bold;
   margin-top: 5px;
-   
-  color:#007BFF; /* Change this to your desired text color */
-
+  color: #007BFF;
 }
 
+.discover {
+  text-align: center;
+  color: var(--secondary-color);
+}
 
-
-.discover{text-align: center;color: var(--secondary-color);}
-.picturetrips p{text-align: center;color:#333;}
-
+.picturetrips p {
+  text-align: center;
+  color: #333;
+}
 
 table {
   width: 100%;
@@ -365,7 +389,10 @@ tbody tr:nth-child(even) {
   background-color: #f9f9f9;
 }
 
-.tableh2{text-align: center;}
+.tableh2 {
+  text-align: center;
+}
 
-.text{color: #333;}
-
+.text {
+  color: #333;
+}
